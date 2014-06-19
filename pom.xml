@@ -42,6 +42,12 @@
         <upstream.version>279f5f7</upstream.version>
         <upstream.url>http://lgsilver.github.io/angles/</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
+        <requirejs>
+           {
+              "paths" : { "angles" : "angles.js" },
+              "shim" : { "angles" : [ "chartjs" ] }
+           }	
+        </requirejs>
     </properties>
 
     <build>
