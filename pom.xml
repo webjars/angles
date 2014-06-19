@@ -44,7 +44,7 @@
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
         <requirejs>
            {
-              "paths" : { "angles" : "angles.js" },
+              "paths" : { "angles" : "angles" },
               "shim" : { "angles" : [ "chartjs" ] }
            }	
         </requirejs>
